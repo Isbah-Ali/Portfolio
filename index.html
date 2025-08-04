@@ -4,90 +4,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <script src="first.js"></scriptsrc></script>
-    <h1 title="Hello">My Portfolio</h1>
-    <h1><u><b>Isbah Ali</b></u></h1>
-    <hr>
-    <p>This is Isbah Ali, passionate to become a Software Engineer</p>
-    <br>
-    <h2>
-        <b>Personal Information</b>
-    </h2>
-    <h3>
+     <!--         <script src="first.js"></scriptsrc></script>           -->
+<div id = "home">  
+  <div class = "container" >
+ 
+    <nav>
+        <h1 style="color: #800020;">ISBAH ALI</h1>
         <ul>
-            <li><b>Name:</b>
-                Isbah Ali</li>
-            <li><b>Father's Name:</b> Syed Arshad Ali</li>
-            <li><b>Country:</b> Pakistan</li>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#aboutMe">About Me</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact">Contact</a></li>
+
         </ul>
-    </h3>
-    <br>
-    <h2>
-        <b>Qualification</b>
-    </h2>
-    <h3>
-        <ul>
-        <li><b>Matriculation:</b> A-One Grade</li>
-        <li><b>Intermediate:</b> A-one Grade</li>
-    </ul></h3>
-    <br>
-    <h2>
-        <b>Current Status</b>
-    </h2>
-    <h3>
-        Under Graduate Program: BS Software Engineering
-    </h3>
-    <br>
-    <h2><b>Things I love To Do</b></h2>
+    </nav>
     
-    <picture>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.kLOvDCpvUGhQIMyAPzI-4QHaE8%26pid%3DApi&f=1&ipt=1b0b606a6a0b3d2aaf072d5b7b826f700ddde7a00540452df9000bbffa55b7be&ipo=images"/>
+    <div class = "HeaderText">
+        <h1>Software Engineer</h1>
+        <h3>Hi, I'm <span>Isbah Ali</span> from Pakistan.</h3>
+         </div>
+  </div>
+ <!-- ABOUT STARTING FROM HERE-->
+ <section id = "aboutMe">
+    <div class="container">
+        <div class="row">
+            <div class="about-Column1-pic">
+                <img src="C:\Users\Arham\Downloads\my.jpeg">
+            </div>
+            <div class="about-Column-2">
+                <h1>About Me</h1> <br>
+                <p>Hi, I'm Isbah Ali, a 4th-semester Software Engineering student at SSUET
+                     Karachi. I'm passionate about coding and problem-solving, with a 
+                     particular interest in Web Development and Machine Learning. I love
+                      exploring new technologies and continuously improving my skills 
+                      through hands-on projects. I enjoy building practical solutions and 
+                      always look for opportunities to challenge myself and grow. If you’re 
+                      looking for a motivated, eager learner with a passion for tech, 
+                      I’d love to connect!</p>
 
-        <img style= "margin-inline: 90px;" src="https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D"
-        height="315"/>
+                <div class="tab_titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!--  <p class="tab-links">Experience</p>  -->
+                    <p class="tab-links" onclick="opentab('education')">Education </p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span> Web Development</span><br>Taught myself HTML, CSS and JavaScript, 
+                            deployed my portfolio and created a real world project.</li>
+                        <li><span>Java Programming</span><br> 
+                         Proficient in OOP, JDBC, and integrating Java with relational databases.</li>
+                        <li><span>Python Programming</span><br>Comfortable with core Python concepts, problem-solving, and algorithm design. </li>
+                        <li><span>Problem-Solving Skills</span><br>Sove Prolbems on platform like Leetcode and HackerRank</li>
+                        <li><span>Database</span><br>Fundamental knowledge of MYSQL an Microsoft SQL server</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> B.S. in Software Engineering</span><br>Currently in 4th Semester<br>Expected Graduation: 2027</li>
+                        <li><span>Intermediate</span><br>Graduated in 2021 </li>
+                     <!---   <li><span></span><br></li>   -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div
+    
+    
+    >
+ </section>
+ <!---->
 
-       <img style= "margin-inline: 25px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RCHAvxJppHwsrNzgukjNuQHaHa%26pid%3DApi&f=1&ipt=b9580f458cb61f81c8e0df65444685d83040d63e4a42d85f2291b1b84a21abc9&ipo=images"
-        height="315"/>
-    </picture   >
-    <h2 style="color:aliceblue;font-family: cursive ;">
-        <b style="margin-left: 200px; color:aliceblue;">Coding</b> <!--This is how you add two properties together in inline style-->
-        <b style="margin-left: 440px;">Photography</b>
-        <b style="margin-left: 300px;">Learning new Languages</b><!--style="text-align:center;"-->
-    </h2>
-    <br><br>
-    <a style="color:aliceblue;" href="next.html" target="_main"> <b>MY UNIVERSITY</b></a> 
-    <hr>
-    <div>
-       <h2 style="color:black;"><b><u>Languages Learned:</u></b></h2>
-       <ol>
-        <li>Python</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS </li>
-       <br>
-       </ol>
+ <section id="projects">
+    <h2> My Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>School Management System</h3>
+        <p>Java desktop app with Swing and MySQL. Manages students, staff, and attendance.</p>
+        <div class="project-links">
+          <a href="https://github.com/Isbah-Ali/School_Management_System" target="_blank">GitHub</a>
+        <!-- <a href="https://youtu.be/yourdemo" target="_blank">Demo</a>    --> 
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Medical App</h3>
+        <p>Python app built with Tkinter to manage patient records and appointments.</p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/medical-app" target="_blank">GitHub</a>
+        <!--  <a href="https://youtu.be/yourdemo" target="_blank">Demo</a>        -->
+        </div>
+      </div>
+
+      <!-- Add more project cards -->
+
     </div>
-    <hr>
-    <button>Click here</button>
-    <hr>
-    <h2>
-        <b>My Projects</b>
-    </h2>
-</body>
-<footer>
-    <hr>
-    <h3 style="color:rgba(11, 11, 112, 0.69);"> Contact No: </h3>
-    
-    <h2 style="color:black;"> Social Accounts:  </h2>  
+  </section>
 
-    <h3 style="color:rgba(3, 3, 91, 0.899);">
-        Facebook:
-        <br>
-        Instagram:
-    </h3>
 
-</footer>
+
+
+
+<!-- CONTACT SECTION-->
+
+<section id = "contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> isbah@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>                   
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>                   
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+             <div class="contact-right">
+               <form action="https://formsubmit.co/isbahali17@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+</form>
+<script>
+function showPopup() {
+    alert("Thank you! Your message is being sent.");
+    return true; // allow form to submit after alert
+}
+</script>
+
+             </div>
+        </div>
+    </div>
+           
+</section>
+
+<!-- JAVASCRIPT BELOW: -->    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+ function opentab(Tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(Tabname).classList.add("active-tab")
+
+    }
+</script>
 
 
