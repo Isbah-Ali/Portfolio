@@ -1,22 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+
+
 body{
-    background-image: url("https://w0.peakpx.com/wallpaper/677/889/HD-wallpaper-black-stylish-background-green-neon-lines-green-light-effects-abstract-black-background.jpg");
+   /* background-image: url("https://w0.peakpx.com/wallpaper/677/889/HD-wallpaper-black-stylish-background-green-neon-lines-green-light-effects-abstract-black-background.jpg");
     background-size:cover ;
     background-attachment:fixed ;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+
+
+    background-color: aliceblue;
+    color: darkslategrey;
 }
-h1{
-    color:rgba(70, 148, 58, 0.997);
+
+#header{
+    width:100%;
+    height: 100vh;
+
 }
-h2{color:rgb(212, 215, 16);}
-footer{
-    background-color:rgba(191, 241, 204, 0.959);  
+
+.container{
+    padding: 40px 10%;
 }
-h3{
-    color: rgba(206, 219, 178, 0.965);
+.container nav h1{
+    font-size: 60px;
+    /*margin-bottom: 50px;*/
 }
-div{
-    width:300px;
-    height: 140px;
-    background-color: rgba(155, 238, 119, 0.926);
-    transform: translate(1270px);
+nav{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+nav ul li{
+display: inline-block;
+margin: 10px 20px ; /*10 for top and botom 20 for left and right */
+list-style: none;
+}
+
+nav ul li a{
+     color:brown;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 70px;
+    position: relative;
+}
+nav ul li a::after{ /*For underlining */
+    content: '';
+    width: 0%; /* keeping 0 to hide and then show when click*/
+    height: 4px;
+    background-color:darkred ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.HeaderText h1{
+   
+    margin-top: 220px ;  
+    font-size: 50px;
+    
+}
+.HeaderText h3 {
+     font-size: 35px;
+     margin-top: 2px ;
+     margin-bottom: 130PX;
+
+}
+
+.HeaderText h3 span{ 
+    color: #800020 ;
+}
+
+/*ABOUT ME Section:*/
+
+#about{
+    padding: min(5em 8%); 
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+.about-Column1-pic{
+    flex-basis: 35%;
+}
+.about-Column-2{
+    flex-basis: 60%; /* 1st col 35% and 2nd col 60% both have 5% space between each other*/
+}
+.about-Column1-pic img{
+    width: 95%;
+    border-radius: 15px;
+    height: 95%;
+    
+}
+.about-Column-2 h1{
+    font-size: 40px;
+}
+.about-Column-2 p{
+    font-size: 20px;
+}
+.tab_titles{
+    display: flex;
+    margin: 20px 0 40px; /*20-top, 0-left&right 40-bottom*/
+    
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #800020;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link{
+    font-size: 25px;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    font-size: 18px;
+    margin: 10px 0; /*10 from top and bottom*/
+}
+.tab-contents ul li span{
+    font-size: 20px;
+    color: #800020;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+  
+  #projects {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: darkslategrey;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    background-color: #f4d5d5; /* light blue or any color you like */
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    color: darkslategrey;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    color: #4b5563;
+  }
+  
+  .project-links {
+    margin-top: 15px;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background: #800020;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+  }
+  
+ /* .project-links a:hover {
+    background: #b3080857;
+  } */
+
+  /* Contact */
+.contact-left{
+   flex-basis: 35%;
+}  
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left h1{
+    font-size: 40px;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #800020;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #800020;
+    transform: translateY(-5px);
+
+}
+
+.btn.btn2{
+    display: inline-block;
+ 
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background: #800020;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
+
+}
+.contact-right form{
+     width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f4d5d5;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* CSS for small screens*/
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .HeaderText h1 {
+        font-size: 35px;
+        margin-top: 120px;
+    }
+
+    .HeaderText h3 {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-Column1-pic,
+    .about-Column-2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .tab-links {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .tab-contents ul li {
+        font-size: 16px;
+    }
+
+    .tab-contents ul li span {
+        font-size: 18px;
+    }
+
+    form .btn2 {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-links a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 20px 5%;
+    }
+}
+
+
+
+/* For better scrolling when clicking to ids*/
+html {
+    scroll-behavior: smooth;
+  }
+  
