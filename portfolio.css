@@ -141,6 +141,7 @@ nav ul li a:hover::after{
 }
 .about-Column-2{
     flex-basis: 60%; /* 1st col 35% and 2nd col 60% both have 5% space between each other*/
+     text-align: left;
 }
 .about-Column1-pic img{
     width: 95%;
@@ -290,10 +291,50 @@ nav ul li a:hover::after{
     }
 }
 
-  
- /* .project-links a:hover {
-    background: #b3080857;
-  } */
+
+
+#experience {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.internship{
+    padding: 40px 10%;
+}
+
+/* Grid Layout */
+.intern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    align-items: stretch; /* equal height cards */
+}
+
+/* Card Style */
+/* Card Style */
+.intern-card {
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    justify-content: space-between; /* push button to bottom */
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s, border 0.3s;
+    min-height: 200px; /* equal height, can expand */
+    position: relative; /* keeps button inside */
+    border: 0.5px solid transparent; /* default border (invisible) */
+}
+
+.intern-card:hover {
+    transform: translateY(-5px);
+    background-color: #f6e5e5; /* hover background */
+    border: 2px solid #d39e9d; /* neon cyan border */
+    box-shadow: 0 0 8px #d69291,
+                0 0 15px #d69291,
+                
+}
 
   /* Contact */
 .contact-left{
@@ -458,3 +499,4 @@ html {
     scroll-behavior: smooth;
   }
   
+
