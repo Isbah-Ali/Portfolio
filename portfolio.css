@@ -57,7 +57,7 @@ section {
   min-height: 100vh;
   padding: 100px 20px; /* Added extra padding to avoid navbar overlap */
   scroll-margin-top: 100px; /* smooth anchor scrolling */
-  text-align: center;
+  text-align:center;
 }
 
 #header{
@@ -129,6 +129,7 @@ nav ul li a:hover::after{
 #about{
     padding: 60px 20px; 
     margin: auto;
+    
 }
 .row{
     display: flex;
@@ -141,7 +142,7 @@ nav ul li a:hover::after{
 }
 .about-Column-2{
     flex-basis: 60%; /* 1st col 35% and 2nd col 60% both have 5% space between each other*/
-     text-align: left;
+    text-align: left;
 }
 .about-Column1-pic img{
     width: 95%;
@@ -290,9 +291,6 @@ nav ul li a:hover::after{
         grid-template-columns: 1fr; /* single column on small screens */
     }
 }
-
-
-
 #experience {
     padding: 60px 20px;
     max-width: 1000px;
@@ -335,6 +333,10 @@ nav ul li a:hover::after{
                 0 0 15px #d69291,
                 
 }
+  
+ /* .project-links a:hover {
+    background: #b3080857;
+  } */
 
   /* Contact */
 .contact-left{
@@ -499,4 +501,3 @@ html {
     scroll-behavior: smooth;
   }
   
-
